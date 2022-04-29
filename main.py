@@ -1,7 +1,7 @@
 import test_sudoku
 
 def print_msg(fun):
-    print('Test', fun, 'function completed!')
+    print('Testing of the', fun, 'function has been successfully completed!')
 
 if __name__ == "__main__":
     test = test_sudoku.SudokuTestCase()
