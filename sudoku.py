@@ -118,8 +118,9 @@ def check_grid(grid: tp.List[tp.List[str]]):
 
 def generate_sudoku(N: int) -> tp.List[tp.List[str]]:
     N = min(N, 81)
-    positions = list(range(81))[:N]
+    positions = list(range(81))
     random.shuffle(positions)
+    positions = positions[:N]
     grid = [['.'] * 9 for i in range(9)]
     for pos in positions:
         i = pos // 9
